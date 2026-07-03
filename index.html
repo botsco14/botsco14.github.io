@@ -8,7 +8,7 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Bosco Liu — Photography Portfolio">
 <meta property="og:description" content="Landscapes, streets, and light in the ordinary — the photography portfolio of Bosco Liu, based in San Francisco.">
-<meta property="og:image" content="assets/web/P1111483_lab_web-1200.webp">
+<meta property="og:image" content="assets/1200/P1111483_lab_web-1200.webp">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%231B1916'/%3E%3Ctext x='50' y='72' font-family='Georgia,serif' font-size='64' font-weight='700' fill='%23E7E3DD' text-anchor='middle'%3EB%3C/text%3E%3Ccircle cx='74' cy='30' r='8' fill='%23b3734a'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://raw.githubusercontent.com">
@@ -25,6 +25,17 @@
   @keyframes fadeUp{ from{ transform:translateY(26px); } to{ transform:none; } }
   .zoom{ transition:transform 1.2s cubic-bezier(.2,.7,.2,1); }
   figure:hover > .zoom{ transform:scale(1.045); }
+  .lbnav{ background:none; border:none; color:rgba(27,25,22,0.5); font-size:22px; line-height:1; cursor:pointer; padding:10px; transition:color 0.25s ease; flex:0 0 auto; }
+  .lbnav:hover{ color:#1B1916; }
+  #navlogo, #navlinks{ transition:transform 0.35s ease; }
+  @media (max-width: 640px){
+    #top, #work, #about, #contact{ padding-left:20px !important; padding-right:20px !important; }
+    #top{ padding-top:120px !important; }
+    #navlogo{ left:20px !important; }
+    #navlinks{ right:20px !important; gap:14px !important; font-size:10px !important; }
+    #gallery{ gap:14px !important; }
+    .lbnav{ font-size:18px; padding:6px; }
+  }
 </style>
 </head>
 <body>
@@ -32,11 +43,11 @@
   <div style="position:fixed;inset:0;z-index:9;pointer-events:none;opacity:0.05;mix-blend-mode:multiply;background-image:url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22160%22 height=%22160%22><filter id=%22n%22><feTurbulence type=%22fractalNoise%22 baseFrequency=%220.85%22 numOctaves=%222%22/></filter><rect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23n)%22/></svg>');background-size:160px 160px;"></div>
 
   <nav>
-    <a href="#top" style="position:fixed;top:22px;left:40px;z-index:31;text-decoration:none;display:inline-flex;flex-direction:column;line-height:0.82;">
+    <a href="#top" id="navlogo" style="position:fixed;top:22px;left:40px;z-index:31;text-decoration:none;display:inline-flex;flex-direction:column;line-height:0.82;">
       <span style="font-family:'Cormorant Garamond',serif;font-size:21px;font-weight:600;letter-spacing:0.01em;color:#1B1916;">Portfolio</span>
       <span style="font-family:'Caveat',cursive;font-size:22px;font-weight:700;color:#b3734a;transform:rotate(-5deg);transform-origin:left center;margin-top:-1px;">Bosco Liu</span>
     </a>
-    <div style="position:fixed;top:31px;right:40px;z-index:31;display:flex;gap:30px;align-items:center;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;mix-blend-mode:difference;">
+    <div id="navlinks" style="position:fixed;top:31px;right:40px;z-index:31;display:flex;gap:30px;align-items:center;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;mix-blend-mode:difference;">
       <a href="#work" style="color:#E7E3DD;text-decoration:none;opacity:0.85;">Work</a>
       <a href="#about" style="color:#E7E3DD;text-decoration:none;opacity:0.85;">About</a>
       <a href="#contact" style="color:#E7E3DD;text-decoration:none;opacity:0.85;">Contact</a>
@@ -64,113 +75,113 @@
     <div id="gallery" style="display:flex;gap:22px;align-items:flex-start;width:100%;">
       <div class="mcol" style="flex:1 1 0;min-width:0;display:flex;flex-direction:column;gap:22px;">
         <figure data-i="0" data-ar="1.4860" style="margin:0;position:relative;cursor:none;overflow:hidden;background:#48312b;width:100%;aspect-ratio:5528 / 3720;animation:fadeUp 0.8s cubic-bezier(.2,.7,.2,1) both;animation-delay:30ms;">
-          <div class="zoom" style="width:100%;height:100%;"><img src="assets/web/P1111483_lab_web-1200.webp" srcset="assets/web/P1111483_lab_web-600.webp 600w, assets/web/P1111483_lab_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="5528" height="3720" alt="A lone cypress tree silhouetted against a glowing orange sunset with figures on the horizon" loading="eager" fetchpriority="high" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+          <div class="zoom" style="width:100%;height:100%;"><img src="assets/1200/P1111483_lab_web-1200.webp" srcset="assets/600/P1111483_lab_web-600.webp 600w, assets/1200/P1111483_lab_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="5528" height="3720" alt="A lone cypress tree silhouetted against a glowing orange sunset with figures on the horizon" loading="eager" fetchpriority="high" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
         </figure>
         <figure data-i="4" data-ar="0.6667" style="margin:0;position:relative;cursor:none;overflow:hidden;background:#2b2515;width:100%;aspect-ratio:4000 / 6000;animation:fadeUp 0.8s cubic-bezier(.2,.7,.2,1) both;animation-delay:310ms;">
-          <div class="zoom" style="width:100%;height:100%;"><img src="assets/web/P1142576_lab_1_web-1200.webp" srcset="assets/web/P1142576_lab_1_web-600.webp 600w, assets/web/P1142576_lab_1_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="4000" height="6000" alt="A brightly lit service station glowing at night above a wet, reflective forecourt" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+          <div class="zoom" style="width:100%;height:100%;"><img src="assets/1200/P1142576_lab_1_web-1200.webp" srcset="assets/600/P1142576_lab_1_web-600.webp 600w, assets/1200/P1142576_lab_1_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="4000" height="6000" alt="A brightly lit service station glowing at night above a wet, reflective forecourt" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
         </figure>
         <figure data-i="8" data-ar="1.3333" style="margin:0;position:relative;cursor:none;overflow:hidden;background:#6b8da7;width:100%;aspect-ratio:4820 / 3615;animation:fadeUp 0.8s cubic-bezier(.2,.7,.2,1) both;animation-delay:240ms;">
-          <div class="zoom" style="width:100%;height:100%;"><img src="assets/web/P1061158_web-1200.webp" srcset="assets/web/P1061158_web-600.webp 600w, assets/web/P1061158_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="4820" height="3615" alt="Birds flying over the ocean past a lone tree on a coastal cliff" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+          <div class="zoom" style="width:100%;height:100%;"><img src="assets/1200/P1061158_web-1200.webp" srcset="assets/600/P1061158_web-600.webp 600w, assets/1200/P1061158_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="4820" height="3615" alt="Birds flying over the ocean past a lone tree on a coastal cliff" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
         </figure>
         <figure data-i="12" data-ar="1.5000" style="margin:0;position:relative;cursor:none;overflow:hidden;background:#263447;width:100%;aspect-ratio:6021 / 4014;animation:fadeUp 0.8s cubic-bezier(.2,.7,.2,1) both;animation-delay:170ms;">
-          <div class="zoom" style="width:100%;height:100%;"><img src="assets/web/IMG_9962_websmaller-1200.webp" srcset="assets/web/IMG_9962_websmaller-600.webp 600w, assets/web/IMG_9962_websmaller-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="6021" height="4014" alt="Blue-hour hilltop view over a glittering city with the moon and Venus overhead" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+          <div class="zoom" style="width:100%;height:100%;"><img src="assets/1200/IMG_9962_websmaller-1200.webp" srcset="assets/600/IMG_9962_websmaller-600.webp 600w, assets/1200/IMG_9962_websmaller-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="6021" height="4014" alt="Blue-hour hilltop view over a glittering city with the moon and Venus overhead" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
         </figure>
         <figure data-i="13" data-ar="1.4999" style="margin:0;position:relative;cursor:none;overflow:hidden;background:#676099;width:100%;aspect-ratio:5866 / 3911;animation:fadeUp 0.8s cubic-bezier(.2,.7,.2,1) both;animation-delay:240ms;">
-          <div class="zoom" style="width:100%;height:100%;"><img src="assets/web/PANA0022_01_web-1200.webp" srcset="assets/web/PANA0022_01_web-600.webp 600w, assets/web/PANA0022_01_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="5866" height="3911" alt="A figure standing on a path in thick violet fog at twilight" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+          <div class="zoom" style="width:100%;height:100%;"><img src="assets/1200/PANA0022_01_web-1200.webp" srcset="assets/600/PANA0022_01_web-600.webp 600w, assets/1200/PANA0022_01_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="5866" height="3911" alt="A figure standing on a path in thick violet fog at twilight" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
         </figure>
         <figure data-i="14" data-ar="0.6665" style="margin:0;position:relative;cursor:none;overflow:hidden;background:#1f1013;width:100%;aspect-ratio:3558 / 5338;animation:fadeUp 0.8s cubic-bezier(.2,.7,.2,1) both;animation-delay:310ms;">
-          <div class="zoom" style="width:100%;height:100%;"><img src="assets/web/P1142567_lab_web-1200.webp" srcset="assets/web/P1142567_lab_web-600.webp 600w, assets/web/P1142567_lab_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="3558" height="5338" alt="Night railroad tracks glowing under red signal lights in the fog" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+          <div class="zoom" style="width:100%;height:100%;"><img src="assets/1200/P1142567_lab_web-1200.webp" srcset="assets/600/P1142567_lab_web-600.webp 600w, assets/1200/P1142567_lab_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="3558" height="5338" alt="Night railroad tracks glowing under red signal lights in the fog" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
         </figure>
         <figure data-i="20" data-ar="1.3334" style="margin:0;position:relative;cursor:none;overflow:hidden;background:#524a46;width:100%;aspect-ratio:5091 / 3818;animation:fadeUp 0.8s cubic-bezier(.2,.7,.2,1) both;animation-delay:30ms;">
-          <div class="zoom" style="width:100%;height:100%;"><img src="assets/web/P1040549_web-1200.webp" srcset="assets/web/P1040549_web-600.webp 600w, assets/web/P1040549_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="5091" height="3818" alt="A wooden gate at the end of a cobblestone path through tall redwood trees" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+          <div class="zoom" style="width:100%;height:100%;"><img src="assets/1200/P1040549_web-1200.webp" srcset="assets/600/P1040549_web-600.webp 600w, assets/1200/P1040549_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="5091" height="3818" alt="A wooden gate at the end of a cobblestone path through tall redwood trees" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
         </figure>
         <figure data-i="21" data-ar="0.6666" style="margin:0;position:relative;cursor:none;overflow:hidden;background:#535146;width:100%;aspect-ratio:3961 / 5942;animation:fadeUp 0.8s cubic-bezier(.2,.7,.2,1) both;animation-delay:100ms;">
-          <div class="zoom" style="width:100%;height:100%;"><img src="assets/web/DSC_3404_web-1200.webp" srcset="assets/web/DSC_3404_web-600.webp 600w, assets/web/DSC_3404_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="3961" height="5942" alt="A tree-lined road at golden hour with hazy sunlight and street lamps" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+          <div class="zoom" style="width:100%;height:100%;"><img src="assets/1200/DSC_3404_web-1200.webp" srcset="assets/600/DSC_3404_web-600.webp 600w, assets/1200/DSC_3404_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="3961" height="5942" alt="A tree-lined road at golden hour with hazy sunlight and street lamps" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
         </figure>
         <figure data-i="27" data-ar="1.5001" style="margin:0;position:relative;cursor:none;overflow:hidden;background:#656a60;width:100%;aspect-ratio:5993 / 3995;animation:fadeUp 0.8s cubic-bezier(.2,.7,.2,1) both;animation-delay:170ms;">
-          <div class="zoom" style="width:100%;height:100%;"><img src="assets/web/P1142491_lab_web-1200.webp" srcset="assets/web/P1142491_lab_web-600.webp 600w, assets/web/P1142491_lab_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="5993" height="3995" alt="A San Francisco hillside cityscape with a person resting on a ledge among palm trees" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+          <div class="zoom" style="width:100%;height:100%;"><img src="assets/1200/P1142491_lab_web-1200.webp" srcset="assets/600/P1142491_lab_web-600.webp 600w, assets/1200/P1142491_lab_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="5993" height="3995" alt="A San Francisco hillside cityscape with a person resting on a ledge among palm trees" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
         </figure>
         <figure data-i="30" data-ar="1.5001" style="margin:0;position:relative;cursor:none;overflow:hidden;background:#727764;width:100%;aspect-ratio:5981 / 3987;animation:fadeUp 0.8s cubic-bezier(.2,.7,.2,1) both;animation-delay:30ms;">
-          <div class="zoom" style="width:100%;height:100%;"><img src="assets/web/P1153008_lab_web-1200.webp" srcset="assets/web/P1153008_lab_web-600.webp 600w, assets/web/P1153008_lab_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="5981" height="3987" alt="Three friends walking down a paved trail through green trees under power lines" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+          <div class="zoom" style="width:100%;height:100%;"><img src="assets/1200/P1153008_lab_web-1200.webp" srcset="assets/600/P1153008_lab_web-600.webp 600w, assets/1200/P1153008_lab_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="5981" height="3987" alt="Three friends walking down a paved trail through green trees under power lines" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
         </figure>
         <figure data-i="31" data-ar="1.3334" style="margin:0;position:relative;cursor:none;overflow:hidden;background:#747474;width:100%;aspect-ratio:4859 / 3644;animation:fadeUp 0.8s cubic-bezier(.2,.7,.2,1) both;animation-delay:100ms;">
-          <div class="zoom" style="width:100%;height:100%;"><img src="assets/web/P1010314_web-1200.webp" srcset="assets/web/P1010314_web-600.webp 600w, assets/web/P1010314_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="4859" height="3644" alt="Black and white lone figure standing on a rocky shore beneath a wispy cloud" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+          <div class="zoom" style="width:100%;height:100%;"><img src="assets/1200/P1010314_web-1200.webp" srcset="assets/600/P1010314_web-600.webp 600w, assets/1200/P1010314_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="4859" height="3644" alt="Black and white lone figure standing on a rocky shore beneath a wispy cloud" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
         </figure>
       </div>
       <div class="mcol" style="flex:1 1 0;min-width:0;display:flex;flex-direction:column;gap:22px;">
         <figure data-i="1" data-ar="0.6666" style="margin:0;position:relative;cursor:none;overflow:hidden;background:#4e3f30;width:100%;aspect-ratio:4943 / 7415;animation:fadeUp 0.8s cubic-bezier(.2,.7,.2,1) both;animation-delay:100ms;">
-          <div class="zoom" style="width:100%;height:100%;"><img src="assets/web/P1003633_web-1200.webp" srcset="assets/web/P1003633_web-600.webp 600w, assets/web/P1003633_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="4943" height="7415" alt="Sunlight streaming through the concrete arches of a viaduct underpass" loading="eager" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+          <div class="zoom" style="width:100%;height:100%;"><img src="assets/1200/P1003633_web-1200.webp" srcset="assets/600/P1003633_web-600.webp 600w, assets/1200/P1003633_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="4943" height="7415" alt="Sunlight streaming through the concrete arches of a viaduct underpass" loading="eager" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
         </figure>
         <figure data-i="6" data-ar="1.5003" style="margin:0;position:relative;cursor:none;overflow:hidden;background:#0a1013;width:100%;aspect-ratio:5923 / 3948;animation:fadeUp 0.8s cubic-bezier(.2,.7,.2,1) both;animation-delay:100ms;">
-          <div class="zoom" style="width:100%;height:100%;"><img src="assets/web/DSC_3171_web-1200.webp" srcset="assets/web/DSC_3171_web-600.webp 600w, assets/web/DSC_3171_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="5923" height="3948" alt="A bright full moon glowing in a dark night sky over silhouetted houses and hills" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+          <div class="zoom" style="width:100%;height:100%;"><img src="assets/1200/DSC_3171_web-1200.webp" srcset="assets/600/DSC_3171_web-600.webp 600w, assets/1200/DSC_3171_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="5923" height="3948" alt="A bright full moon glowing in a dark night sky over silhouetted houses and hills" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
         </figure>
         <figure data-i="7" data-ar="1.5001" style="margin:0;position:relative;cursor:none;overflow:hidden;background:#4e758e;width:100%;aspect-ratio:5597 / 3731;animation:fadeUp 0.8s cubic-bezier(.2,.7,.2,1) both;animation-delay:170ms;">
-          <div class="zoom" style="width:100%;height:100%;"><img src="assets/web/P1131704_lab_web-1200.webp" srcset="assets/web/P1131704_lab_web-600.webp 600w, assets/web/P1131704_lab_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="5597" height="3731" alt="A silver commuter train crossing an elevated track under a clear blue sky" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+          <div class="zoom" style="width:100%;height:100%;"><img src="assets/1200/P1131704_lab_web-1200.webp" srcset="assets/600/P1131704_lab_web-600.webp 600w, assets/1200/P1131704_lab_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="5597" height="3731" alt="A silver commuter train crossing an elevated track under a clear blue sky" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
         </figure>
         <figure data-i="10" data-ar="0.6667" style="margin:0;position:relative;cursor:none;overflow:hidden;background:#4580b9;width:100%;aspect-ratio:4000 / 6000;animation:fadeUp 0.8s cubic-bezier(.2,.7,.2,1) both;animation-delay:30ms;">
-          <div class="zoom" style="width:100%;height:100%;"><img src="assets/web/P1010888_web-1200.webp" srcset="assets/web/P1010888_web-600.webp 600w, assets/web/P1010888_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="4000" height="6000" alt="Colorful flags and streamers fluttering against a bright blue sky" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+          <div class="zoom" style="width:100%;height:100%;"><img src="assets/1200/P1010888_web-1200.webp" srcset="assets/600/P1010888_web-600.webp 600w, assets/1200/P1010888_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="4000" height="6000" alt="Colorful flags and streamers fluttering against a bright blue sky" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
         </figure>
         <figure data-i="15" data-ar="1.3330" style="margin:0;position:relative;cursor:none;overflow:hidden;background:#1f1719;width:100%;aspect-ratio:3022 / 2267;animation:fadeUp 0.8s cubic-bezier(.2,.7,.2,1) both;animation-delay:30ms;">
-          <div class="zoom" style="width:100%;height:100%;"><img src="assets/web/P1051032_web-1200.webp" srcset="assets/web/P1051032_web-600.webp 600w, assets/web/P1051032_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="3022" height="2267" alt="Night long exposure of freeway light trails streaking past distant city lights" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+          <div class="zoom" style="width:100%;height:100%;"><img src="assets/1200/P1051032_web-1200.webp" srcset="assets/600/P1051032_web-600.webp 600w, assets/1200/P1051032_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="3022" height="2267" alt="Night long exposure of freeway light trails streaking past distant city lights" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
         </figure>
         <figure data-i="18" data-ar="0.6667" style="margin:0;position:relative;cursor:none;overflow:hidden;background:#383838;width:100%;aspect-ratio:3989 / 5983;animation:fadeUp 0.8s cubic-bezier(.2,.7,.2,1) both;animation-delay:240ms;">
-          <div class="zoom" style="width:100%;height:100%;"><img src="assets/web/IMG_9958_web-1200.webp" srcset="assets/web/IMG_9958_web-600.webp 600w, assets/web/IMG_9958_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="3989" height="5983" alt="Black and white modernist colonnade of columns receding beneath a coffered ceiling" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+          <div class="zoom" style="width:100%;height:100%;"><img src="assets/1200/IMG_9958_web-1200.webp" srcset="assets/600/IMG_9958_web-600.webp 600w, assets/1200/IMG_9958_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="3989" height="5983" alt="Black and white modernist colonnade of columns receding beneath a coffered ceiling" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
         </figure>
         <figure data-i="22" data-ar="1.5445" style="margin:0;position:relative;cursor:none;overflow:hidden;background:#545454;width:100%;aspect-ratio:5784 / 3745;animation:fadeUp 0.8s cubic-bezier(.2,.7,.2,1) both;animation-delay:170ms;">
-          <div class="zoom" style="width:100%;height:100%;"><img src="assets/web/P1131755_lab_web-1200.webp" srcset="assets/web/P1131755_lab_web-600.webp 600w, assets/web/P1131755_lab_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="5784" height="3745" alt="Black and white dramatic clouds over tidal flats lined with distant power poles" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+          <div class="zoom" style="width:100%;height:100%;"><img src="assets/1200/P1131755_lab_web-1200.webp" srcset="assets/600/P1131755_lab_web-600.webp 600w, assets/1200/P1131755_lab_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="5784" height="3745" alt="Black and white dramatic clouds over tidal flats lined with distant power poles" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
         </figure>
         <figure data-i="24" data-ar="1.5002" style="margin:0;position:relative;cursor:none;overflow:hidden;background:#665e58;width:100%;aspect-ratio:4670 / 3113;animation:fadeUp 0.8s cubic-bezier(.2,.7,.2,1) both;animation-delay:310ms;">
-          <div class="zoom" style="width:100%;height:100%;"><img src="assets/web/P1131876_lab_web-1200.webp" srcset="assets/web/P1131876_lab_web-600.webp 600w, assets/web/P1131876_lab_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="4670" height="3113" alt="A massive concrete dam and a winding road set among desert canyon cliffs" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+          <div class="zoom" style="width:100%;height:100%;"><img src="assets/1200/P1131876_lab_web-1200.webp" srcset="assets/600/P1131876_lab_web-600.webp 600w, assets/1200/P1131876_lab_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="4670" height="3113" alt="A massive concrete dam and a winding road set among desert canyon cliffs" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
         </figure>
         <figure data-i="26" data-ar="1.3333" style="margin:0;position:relative;cursor:none;overflow:hidden;background:#646464;width:100%;aspect-ratio:2276 / 1707;animation:fadeUp 0.8s cubic-bezier(.2,.7,.2,1) both;animation-delay:100ms;">
-          <div class="zoom" style="width:100%;height:100%;"><img src="assets/web/P1081972_web-1200.webp" srcset="assets/web/P1081972_web-600.webp 600w, assets/web/P1081972_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="2276" height="1707" alt="Black and white figure walking down steps beside towering concrete columns" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+          <div class="zoom" style="width:100%;height:100%;"><img src="assets/1200/P1081972_web-1200.webp" srcset="assets/600/P1081972_web-600.webp 600w, assets/1200/P1081972_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="2276" height="1707" alt="Black and white figure walking down steps beside towering concrete columns" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
         </figure>
         <figure data-i="29" data-ar="1.3334" style="margin:0;position:relative;cursor:none;overflow:hidden;background:#717069;width:100%;aspect-ratio:4683 / 3512;animation:fadeUp 0.8s cubic-bezier(.2,.7,.2,1) both;animation-delay:310ms;">
-          <div class="zoom" style="width:100%;height:100%;"><img src="assets/web/P1020427_01_web-1200.webp" srcset="assets/web/P1020427_01_web-600.webp 600w, assets/web/P1020427_01_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="4683" height="3512" alt="The Golden Gate Bridge at sunset seen from the shore through warm haze" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+          <div class="zoom" style="width:100%;height:100%;"><img src="assets/1200/P1020427_01_web-1200.webp" srcset="assets/600/P1020427_01_web-600.webp 600w, assets/1200/P1020427_01_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="4683" height="3512" alt="The Golden Gate Bridge at sunset seen from the shore through warm haze" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
         </figure>
         <figure data-i="32" data-ar="1.5001" style="margin:0;position:relative;cursor:none;overflow:hidden;background:#777c77;width:100%;aspect-ratio:6020 / 4013;animation:fadeUp 0.8s cubic-bezier(.2,.7,.2,1) both;animation-delay:170ms;">
-          <div class="zoom" style="width:100%;height:100%;"><img src="assets/web/IMG_9564_web-1200.webp" srcset="assets/web/IMG_9564_web-600.webp 600w, assets/web/IMG_9564_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="6020" height="4013" alt="A traditional Chinese pavilion on a misty green hillside above a rock-garden pond" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+          <div class="zoom" style="width:100%;height:100%;"><img src="assets/1200/IMG_9564_web-1200.webp" srcset="assets/600/IMG_9564_web-600.webp 600w, assets/1200/IMG_9564_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="6020" height="4013" alt="A traditional Chinese pavilion on a misty green hillside above a rock-garden pond" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
         </figure>
         <figure data-i="34" data-ar="1.3332" style="margin:0;position:relative;cursor:none;overflow:hidden;background:#98928c;width:100%;aspect-ratio:3101 / 2326;animation:fadeUp 0.8s cubic-bezier(.2,.7,.2,1) both;animation-delay:310ms;">
-          <div class="zoom" style="width:100%;height:100%;"><img src="assets/web/P1102989_web-1200.webp" srcset="assets/web/P1102989_web-600.webp 600w, assets/web/P1102989_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="3101" height="2326" alt="Lobby interior with a large black and white patterned tapestry above a row of stools" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+          <div class="zoom" style="width:100%;height:100%;"><img src="assets/1200/P1102989_web-1200.webp" srcset="assets/600/P1102989_web-600.webp 600w, assets/1200/P1102989_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="3101" height="2326" alt="Lobby interior with a large black and white patterned tapestry above a row of stools" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
         </figure>
       </div>
       <div class="mcol" style="flex:1 1 0;min-width:0;display:flex;flex-direction:column;gap:22px;">
         <figure data-i="2" data-ar="1.4998" style="margin:0;position:relative;cursor:none;overflow:hidden;background:#543c1f;width:100%;aspect-ratio:7328 / 4886;animation:fadeUp 0.8s cubic-bezier(.2,.7,.2,1) both;animation-delay:170ms;">
-          <div class="zoom" style="width:100%;height:100%;"><img src="assets/web/P1003626_web-1200.webp" srcset="assets/web/P1003626_web-600.webp 600w, assets/web/P1003626_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="7328" height="4886" alt="A golden hazy sunset over a bay with power lines crossing the sky" loading="eager" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+          <div class="zoom" style="width:100%;height:100%;"><img src="assets/1200/P1003626_web-1200.webp" srcset="assets/600/P1003626_web-600.webp 600w, assets/1200/P1003626_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="7328" height="4886" alt="A golden hazy sunset over a bay with power lines crossing the sky" loading="eager" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
         </figure>
         <figure data-i="3" data-ar="1.3480" style="margin:0;position:relative;cursor:none;overflow:hidden;background:#090806;width:100%;aspect-ratio:5125 / 3802;animation:fadeUp 0.8s cubic-bezier(.2,.7,.2,1) both;animation-delay:240ms;">
-          <div class="zoom" style="width:100%;height:100%;"><img src="assets/web/PB180206_web-1200.webp" srcset="assets/web/PB180206_web-600.webp 600w, assets/web/PB180206_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="5125" height="3802" alt="A lone car parked under a bright street lamp in a dark empty lot at night" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+          <div class="zoom" style="width:100%;height:100%;"><img src="assets/1200/PB180206_web-1200.webp" srcset="assets/600/PB180206_web-600.webp 600w, assets/1200/PB180206_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="5125" height="3802" alt="A lone car parked under a bright street lamp in a dark empty lot at night" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
         </figure>
         <figure data-i="5" data-ar="1.3332" style="margin:0;position:relative;cursor:none;overflow:hidden;background:#453e29;width:100%;aspect-ratio:4741 / 3556;animation:fadeUp 0.8s cubic-bezier(.2,.7,.2,1) both;animation-delay:30ms;">
-          <div class="zoom" style="width:100%;height:100%;"><img src="assets/web/P1280011_web-1200.webp" srcset="assets/web/P1280011_web-600.webp 600w, assets/web/P1280011_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="4741" height="3556" alt="A misty forest trail winding through tall trees with soft light filtering through" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+          <div class="zoom" style="width:100%;height:100%;"><img src="assets/1200/P1280011_web-1200.webp" srcset="assets/600/P1280011_web-600.webp 600w, assets/1200/P1280011_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="4741" height="3556" alt="A misty forest trail winding through tall trees with soft light filtering through" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
         </figure>
         <figure data-i="9" data-ar="1.5072" style="margin:0;position:relative;cursor:none;overflow:hidden;background:#53728b;width:100%;aspect-ratio:5141 / 3411;animation:fadeUp 0.8s cubic-bezier(.2,.7,.2,1) both;animation-delay:310ms;">
-          <div class="zoom" style="width:100%;height:100%;"><img src="assets/web/P1082085_web-1200.webp" srcset="assets/web/P1082085_web-600.webp 600w, assets/web/P1082085_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="5141" height="3411" alt="Fog-covered hills with the distant San Francisco skyline at dusk" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+          <div class="zoom" style="width:100%;height:100%;"><img src="assets/1200/P1082085_web-1200.webp" srcset="assets/600/P1082085_web-600.webp 600w, assets/1200/P1082085_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="5141" height="3411" alt="Fog-covered hills with the distant San Francisco skyline at dusk" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
         </figure>
         <figure data-i="11" data-ar="0.6667" style="margin:0;position:relative;cursor:none;overflow:hidden;background:#283950;width:100%;aspect-ratio:4033 / 6049;animation:fadeUp 0.8s cubic-bezier(.2,.7,.2,1) both;animation-delay:100ms;">
-          <div class="zoom" style="width:100%;height:100%;"><img src="assets/web/DSC_3068_web-1200.webp" srcset="assets/web/DSC_3068_web-600.webp 600w, assets/web/DSC_3068_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="4033" height="6049" alt="Looking up at the Transamerica Pyramid against a clear blue sky in San Francisco" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+          <div class="zoom" style="width:100%;height:100%;"><img src="assets/1200/DSC_3068_web-1200.webp" srcset="assets/600/DSC_3068_web-600.webp 600w, assets/1200/DSC_3068_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="4033" height="6049" alt="Looking up at the Transamerica Pyramid against a clear blue sky in San Francisco" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
         </figure>
         <figure data-i="16" data-ar="1.4997" style="margin:0;position:relative;cursor:none;overflow:hidden;background:#2c303b;width:100%;aspect-ratio:5675 / 3784;animation:fadeUp 0.8s cubic-bezier(.2,.7,.2,1) both;animation-delay:100ms;">
-          <div class="zoom" style="width:100%;height:100%;"><img src="assets/web/P1133851_web-1200.webp" srcset="assets/web/P1133851_web-600.webp 600w, assets/web/P1133851_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="5675" height="3784" alt="A San Francisco street at blue hour with the Transamerica Pyramid and the lit Columbus Tower" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+          <div class="zoom" style="width:100%;height:100%;"><img src="assets/1200/P1133851_web-1200.webp" srcset="assets/600/P1133851_web-600.webp 600w, assets/1200/P1133851_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="5675" height="3784" alt="A San Francisco street at blue hour with the Transamerica Pyramid and the lit Columbus Tower" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
         </figure>
         <figure data-i="17" data-ar="1.5001" style="margin:0;position:relative;cursor:none;overflow:hidden;background:#353535;width:100%;aspect-ratio:5990 / 3993;animation:fadeUp 0.8s cubic-bezier(.2,.7,.2,1) both;animation-delay:170ms;">
-          <div class="zoom" style="width:100%;height:100%;"><img src="assets/web/P1133600_web-1200.webp" srcset="assets/web/P1133600_web-600.webp 600w, assets/web/P1133600_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="5990" height="3993" alt="Black and white silhouette of a windswept tree backlit by bright fog" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+          <div class="zoom" style="width:100%;height:100%;"><img src="assets/1200/P1133600_web-1200.webp" srcset="assets/600/P1133600_web-600.webp 600w, assets/1200/P1133600_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="5990" height="3993" alt="Black and white silhouette of a windswept tree backlit by bright fog" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
         </figure>
         <figure data-i="19" data-ar="0.6668" style="margin:0;position:relative;cursor:none;overflow:hidden;background:#42403f;width:100%;aspect-ratio:1551 / 2326;animation:fadeUp 0.8s cubic-bezier(.2,.7,.2,1) both;animation-delay:310ms;">
-          <div class="zoom" style="width:100%;height:100%;"><img src="assets/web/P1003572_web-1200.webp" srcset="assets/web/P1003572_web-600.webp 600w, assets/web/P1003572_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="1551" height="2326" alt="A modern apartment building facade with stacked balconies and a street lamp" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+          <div class="zoom" style="width:100%;height:100%;"><img src="assets/1200/P1003572_web-1200.webp" srcset="assets/600/P1003572_web-600.webp 600w, assets/1200/P1003572_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="1551" height="2326" alt="A modern apartment building facade with stacked balconies and a street lamp" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
         </figure>
         <figure data-i="23" data-ar="1.4999" style="margin:0;position:relative;cursor:none;overflow:hidden;background:#5d5d5e;width:100%;aspect-ratio:6019 / 4013;animation:fadeUp 0.8s cubic-bezier(.2,.7,.2,1) both;animation-delay:240ms;">
-          <div class="zoom" style="width:100%;height:100%;"><img src="assets/web/IMG_9207_web-1200.webp" srcset="assets/web/IMG_9207_web-600.webp 600w, assets/web/IMG_9207_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="6019" height="4013" alt="Heavy storm clouds gathering over a mountain town with snow-capped peaks" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+          <div class="zoom" style="width:100%;height:100%;"><img src="assets/1200/IMG_9207_web-1200.webp" srcset="assets/600/IMG_9207_web-600.webp 600w, assets/1200/IMG_9207_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="6019" height="4013" alt="Heavy storm clouds gathering over a mountain town with snow-capped peaks" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
         </figure>
         <figure data-i="25" data-ar="1.5230" style="margin:0;position:relative;cursor:none;overflow:hidden;background:#6c6653;width:100%;aspect-ratio:5949 / 3906;animation:fadeUp 0.8s cubic-bezier(.2,.7,.2,1) both;animation-delay:30ms;">
-          <div class="zoom" style="width:100%;height:100%;"><img src="assets/web/DSC_7361_02_web-1200.webp" srcset="assets/web/DSC_7361_02_web-600.webp 600w, assets/web/DSC_7361_02_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="5949" height="3906" alt="The sun setting over rolling hills with a winding road below" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+          <div class="zoom" style="width:100%;height:100%;"><img src="assets/1200/DSC_7361_02_web-1200.webp" srcset="assets/600/DSC_7361_02_web-600.webp 600w, assets/1200/DSC_7361_02_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="5949" height="3906" alt="The sun setting over rolling hills with a winding road below" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
         </figure>
         <figure data-i="28" data-ar="0.6668" style="margin:0;position:relative;cursor:none;overflow:hidden;background:#60716e;width:100%;aspect-ratio:3550 / 5324;animation:fadeUp 0.8s cubic-bezier(.2,.7,.2,1) both;animation-delay:240ms;">
-          <div class="zoom" style="width:100%;height:100%;"><img src="assets/web/P1142497_lab_web-1200.webp" srcset="assets/web/P1142497_lab_web-600.webp 600w, assets/web/P1142497_lab_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="3550" height="5324" alt="Coit Tower rising above trees and houses against a clear blue sky" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+          <div class="zoom" style="width:100%;height:100%;"><img src="assets/1200/P1142497_lab_web-1200.webp" srcset="assets/600/P1142497_lab_web-600.webp 600w, assets/1200/P1142497_lab_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="3550" height="5324" alt="Coit Tower rising above trees and houses against a clear blue sky" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
         </figure>
         <figure data-i="33" data-ar="1.5000" style="margin:0;position:relative;cursor:none;overflow:hidden;background:#807b7b;width:100%;aspect-ratio:7287 / 4858;animation:fadeUp 0.8s cubic-bezier(.2,.7,.2,1) both;animation-delay:240ms;">
-          <div class="zoom" style="width:100%;height:100%;"><img src="assets/web/P1003654_web-1200.webp" srcset="assets/web/P1003654_web-600.webp 600w, assets/web/P1003654_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="7287" height="4858" alt="A mid-century modern house on a quiet street with parked cars" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+          <div class="zoom" style="width:100%;height:100%;"><img src="assets/1200/P1003654_web-1200.webp" srcset="assets/600/P1003654_web-600.webp 600w, assets/1200/P1003654_web-1200.webp 1200w" sizes="(max-width: 800px) 46vw, 460px" width="7287" height="4858" alt="A mid-century modern house on a quiet street with parked cars" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
         </figure>
       </div>
     </div>
@@ -180,7 +191,7 @@
     <div style="display:flex;gap:56px;align-items:flex-start;flex-wrap:wrap;border-top:1px solid #1B1916;padding-top:40px;">
       <div style="flex:0 0 auto;width:300px;max-width:100%;">
         <div style="aspect-ratio:3 / 4;background:#9aa7b2;overflow:hidden;">
-          <img src="assets/web/P1040681-800.webp" width="800" height="1067" loading="lazy" decoding="async" alt="Portrait of photographer Bosco Liu" style="width:100%;height:100%;object-fit:cover;display:block;">
+          <img src="assets/P1040681-800.webp" width="800" height="1067" loading="lazy" decoding="async" alt="Portrait of photographer Bosco Liu" style="width:100%;height:100%;object-fit:cover;display:block;">
         </div>
       </div>
       <div style="flex:1 1 420px;min-width:300px;">
@@ -224,14 +235,14 @@
   <div id="lightbox" style="display:none;position:fixed;inset:0;z-index:80;background:#FFFFFF;flex-direction:column;animation:lbin 0.4s ease both;">
     <div style="display:flex;align-items:center;justify-content:space-between;padding:22px 30px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#8B8479;">
       <span id="lbCounter"></span>
-      <button id="lbClose" style="background:none;border:none;color:#1B1916;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;cursor:pointer;">Close ✕</button>
+      <button id="lbClose" class="lbnav" aria-label="Close" style="font-size:16px;letter-spacing:0;">✕</button>
     </div>
     <div style="flex:1;display:flex;align-items:center;justify-content:center;gap:20px;padding:0 24px 24px;min-height:0;">
-      <button id="lbPrev" style="flex:0 0 auto;background:none;border:1px solid rgba(27,25,22,0.25);color:#1B1916;width:46px;height:46px;border-radius:50%;cursor:pointer;font-size:16px;">←</button>
+      <button id="lbPrev" class="lbnav" aria-label="Previous photo">←</button>
       <figure style="flex:1 1 auto;height:100%;display:flex;align-items:center;justify-content:center;min-width:0;margin:0;">
         <img id="lbImg" alt="" style="max-width:100%;max-height:78vh;object-fit:contain;display:block;animation:mediaIn 0.5s ease both;">
       </figure>
-      <button id="lbNext" style="flex:0 0 auto;background:none;border:1px solid rgba(27,25,22,0.25);color:#1B1916;width:46px;height:46px;border-radius:50%;cursor:pointer;font-size:16px;">→</button>
+      <button id="lbNext" class="lbnav" aria-label="Next photo">→</button>
     </div>
   </div>
 
@@ -252,6 +263,8 @@
   });
 
   function relayout(cols,gap){
+    if(window.innerWidth<640){ cols=(cols>=4?3:cols===3?2:1); gap=Math.min(gap,14); }
+    else if(window.innerWidth<1000 && cols>=4){ cols=3; }
     var figs=[].slice.call(gallery.querySelectorAll('figure')).sort(function(a,b){ return (+a.dataset.i)-(+b.dataset.i); });
     var cw=gallery.clientWidth, colW=(cw-gap*(cols-1))/cols;
     gallery.style.gap=gap+'px';
@@ -265,13 +278,21 @@
     });
   }
 
+  var rsT=null;
+  window.addEventListener('resize',function(){ clearTimeout(rsT); rsT=setTimeout(function(){ relayout(TABS[cur][1],TABS[cur][2]); },150); });
+  if(window.innerWidth<1000) relayout(TABS[cur][1],TABS[cur][2]);
+
   // — lightbox —
   var lb=document.getElementById('lightbox'), lbImg=document.getElementById('lbImg'), lbCounter=document.getElementById('lbCounter');
   var lbIdx=null;
   function pad(n){ return String(n).padStart(2,'0'); }
   function openLb(i){
     lbIdx=i; var p=PHOTOS[i];
-    lbImg.src='assets/web/'+p[0]+'-1200.webp'; lbImg.width=p[1]; lbImg.height=p[2]; lbImg.alt=p[3];
+    var hiW=Math.round(Math.min(1, 3200/Math.max(p[1],p[2]))*p[1]);
+    lbImg.src='assets/1200/'+p[0]+'-1200.webp';
+    lbImg.srcset='assets/1200/'+p[0]+'-1200.webp 1200w, assets/3200/'+p[0]+'-3200.webp '+hiW+'w';
+    lbImg.sizes='95vw';
+    lbImg.width=p[1]; lbImg.height=p[2]; lbImg.alt=p[3];
     lbCounter.textContent=pad(i+1)+' / '+pad(PHOTOS.length);
     lb.style.display='flex';
     setCursor(false);
@@ -300,6 +321,17 @@
   window.addEventListener('mousemove',function(e){ mx=e.clientX; my=e.clientY; draw(); });
   gallery.addEventListener('mouseover',function(e){ if(e.target.closest('figure')) setCursor(true); });
   gallery.addEventListener('mouseout',function(e){ if(e.target.closest('figure') && !(e.relatedTarget&&e.relatedTarget.closest('figure'))) setCursor(false); });
+
+  // — auto-hide nav on scroll down —
+  var navLogo=document.getElementById('navlogo'), navLinks=document.getElementById('navlinks');
+  var navLastY=window.scrollY||0, navHidden=false;
+  function applyNav(){ var t=navHidden?'translateY(-160%)':''; navLogo.style.transform=t; navLinks.style.transform=t; }
+  window.addEventListener('scroll',function(){
+    var y=window.scrollY;
+    if(y>navLastY+2 && y>140 && !navHidden){ navHidden=true; applyNav(); }
+    else if((y<navLastY-2 || y<=140) && navHidden){ navHidden=false; applyNav(); }
+    navLastY=y;
+  },{passive:true});
 })();
 </script>
 </body>
