@@ -220,7 +220,7 @@
     <div style="border-top:1px solid #1B1916;padding-top:44px;">
       <h2 style="font-weight:400;font-size:clamp(40px,6vw,84px);line-height:1.0;letter-spacing:-0.01em;">Come say <em style="font-style:italic;">hello.</em></h2>
       <div style="display:flex;gap:14px 40px;flex-wrap:wrap;margin-top:40px;align-items:center;">
-        <a href="/cdn-cgi/l/email-protection#7f05171615161e1113160a4e4d4c4b4a493f18121e1613511c1012" style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.06em;color:#1B1916;text-decoration:none;border-bottom:1px solid #1B1916;padding-bottom:5px;"><span class="__cf_email__" data-cfemail="7e04161714171f1012170b4f4c4d4a4b483e19131f1712501d1113">[email&#160;protected]</span></a>
+        <a href="/cdn-cgi/l/email-protection#b0cad8d9dad9d1dedcd9c5818283848586f0d7ddd1d9dc9ed3dfdd" style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.06em;color:#1B1916;text-decoration:none;border-bottom:1px solid #1B1916;padding-bottom:5px;"><span class="__cf_email__" data-cfemail="e19b89888b88808f8d8894d0d3d2d5d4d7a1868c80888dcf828e8c">[email&#160;protected]</span></a>
         <a href="https://www.instagram.com/pix.zl_peep" target="_blank" style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.06em;color:#1B1916;text-decoration:none;border-bottom:1px solid #1B1916;padding-bottom:5px;">@pix.zl_peep ↗</a>
       </div>
       <div style="display:flex;justify-content:space-between;margin-top:80px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:#8B8479;flex-wrap:wrap;gap:8px;">
@@ -288,14 +288,19 @@
   function pad(n){ return String(n).padStart(2,'0'); }
   function openLb(i){
     lbIdx=i; var p=PHOTOS[i];
-    var hiW=Math.round(Math.min(1, 3200/Math.max(p[1],p[2]))*p[1]);
-    lbImg.src='1200/'+p[0]+'-1200.webp';
-    lbImg.srcset='1200/'+p[0]+'-1200.webp 1200w, 3200/'+p[0]+'-3200.webp '+hiW+'w';
-    lbImg.sizes='95vw';
+    // show the light (1200) version immediately — no srcset so the browser
+    // doesn't wait on the 3200 and keep displaying the previous photo
+    lbImg.removeAttribute('srcset');
+    lbImg.removeAttribute('sizes');
     lbImg.width=p[1]; lbImg.height=p[2]; lbImg.alt=p[3];
+    lbImg.src='1200/'+p[0]+'-1200.webp';
     lbCounter.textContent=pad(i+1)+' / '+pad(PHOTOS.length);
     lb.style.display='flex';
     setCursor(false);
+    // preload the full 3200 in the background, then swap in when ready
+    var hi=new Image();
+    hi.onload=function(){ if(lbIdx===i) lbImg.src='3200/'+p[0]+'-3200.webp'; };
+    hi.src='3200/'+p[0]+'-3200.webp';
   }
   function closeLb(){ lb.style.display='none'; lbIdx=null; }
   function step(d){ if(lbIdx===null) return; openLb((lbIdx+d+PHOTOS.length)%PHOTOS.length); }
