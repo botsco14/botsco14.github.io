@@ -29,7 +29,7 @@
   .lbnav:hover{ color:#1B1916; }
   #navlogo, #navlinks{ transition:transform 0.4s ease, opacity 0.3s ease; }
   @media (max-width: 640px){
-    #top, #work, #about, #contact{ padding-left:20px !important; padding-right:20px !important; }
+    #top, #photos, #bio{ padding-left:20px !important; padding-right:20px !important; }
     #top{ padding-top:120px !important; }
     #navlogo{ left:20px !important; }
     #navlinks{ right:20px !important; gap:14px !important; font-size:10px !important; }
@@ -48,9 +48,8 @@
       <span style="font-family:'Caveat',cursive;font-size:22px;font-weight:700;color:#b3734a;transform:rotate(-5deg);transform-origin:left center;margin-top:-1px;">Bosco Liu</span>
     </a>
     <div id="navlinks" style="position:fixed;top:31px;right:40px;z-index:31;display:flex;gap:30px;align-items:center;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;mix-blend-mode:difference;">
-      <a href="#work" style="color:#E7E3DD;text-decoration:none;opacity:0.85;">Work</a>
-      <a href="#about" style="color:#E7E3DD;text-decoration:none;opacity:0.85;">About</a>
-      <a href="#contact" style="color:#E7E3DD;text-decoration:none;opacity:0.85;">Contact</a>
+      <a href="#photos" style="color:#E7E3DD;text-decoration:none;opacity:0.85;">Photos</a>
+      <a href="#bio" style="color:#E7E3DD;text-decoration:none;opacity:0.85;">Bio</a>
       <a href="https://www.instagram.com/pix.zl_peep" target="_blank" style="color:#E7E3DD;text-decoration:none;opacity:0.85;">Instagram&nbsp;↗</a>
     </div>
   </nav>
@@ -63,11 +62,11 @@
     </div>
     <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-top:58px;gap:32px;flex-wrap:wrap;">
       <p style="max-width:46ch;font-size:21px;line-height:1.5;color:#42403A;">Landscapes, streets, and whatever catches my eye around the city. Based in San Francisco, shooting on the Lumix S9. Here's what I like shooting — hope you like it too.</p>
-      <a href="#work" style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:#1B1916;text-decoration:none;white-space:nowrap;">Have a look ↓</a>
+      <a href="#photos" style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:#1B1916;text-decoration:none;white-space:nowrap;">Have a look ↓</a>
     </div>
   </header>
 
-  <section id="work" style="padding:48px 40px 40px;max-width:1500px;margin:0 auto;">
+  <section id="photos" style="padding:48px 40px 40px;max-width:1500px;margin:0 auto;">
     <div style="display:flex;align-items:baseline;justify-content:space-between;border-top:1px solid #1B1916;padding-top:16px;margin-bottom:34px;flex-wrap:wrap;gap:16px;">
       <h2 style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.2em;text-transform:uppercase;font-weight:500;color:#1B1916;">The Photos</h2>
       <div id="sizeTabs" style="display:flex;gap:6px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;"></div>
@@ -187,7 +186,7 @@
     </div>
   </section>
 
-  <section id="about" style="padding:80px 40px;max-width:1500px;margin:0 auto;">
+  <section id="bio" style="padding:80px 40px;max-width:1500px;margin:0 auto;">
     <div style="display:flex;gap:56px;align-items:flex-start;flex-wrap:wrap;border-top:1px solid #1B1916;padding-top:40px;">
       <div style="flex:0 0 auto;width:300px;max-width:100%;">
         <div style="aspect-ratio:3 / 4;background:#9aa7b2;overflow:hidden;">
@@ -195,10 +194,10 @@
         </div>
       </div>
       <div style="flex:1 1 420px;min-width:300px;">
-        <h2 style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.2em;text-transform:uppercase;font-weight:500;margin-bottom:26px;">About</h2>
+        <h2 style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.2em;text-transform:uppercase;font-weight:500;margin-bottom:26px;">Bio</h2>
         <div style="display:flex;gap:40px;flex-wrap:wrap;">
           <p style="flex:1 1 240px;font-size:clamp(19px,2.2vw,26px);line-height:1.45;font-weight:400;letter-spacing:-0.005em;">I started my photography journey in June of 2024 shooting pictures on my phone. I had no clue what I was doing then, and I still don't now —</p>
-          <p style="flex:1 1 240px;font-size:clamp(19px,2.2vw,26px);line-height:1.45;font-weight:400;letter-spacing:-0.005em;">But I guess that is my style of photography. The camera is absolute freedom. I just shoot whatever catches my eye.</p>
+          <p style="flex:1 1 240px;font-size:clamp(19px,2.2vw,26px);line-height:1.45;font-weight:400;letter-spacing:-0.005em;">But I guess that is my style of photography. There really isn't a right or a wrong. I just shoot whatever catches my eye.</p>
         </div>
         <div style="margin-top:36px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:#8B8479;">
           <div style="display:flex;flex-flow:column wrap;max-height:130px;gap:0 56px;align-content:flex-start;">
@@ -216,20 +215,6 @@
     </div>
   </section>
 
-  <footer id="contact" style="padding:96px 40px 64px;max-width:1500px;margin:0 auto;">
-    <div style="border-top:1px solid #1B1916;padding-top:44px;">
-      <h2 style="font-weight:400;font-size:clamp(40px,6vw,84px);line-height:1.0;letter-spacing:-0.01em;">Come say <em style="font-style:italic;">hello.</em></h2>
-      <div style="display:flex;gap:14px 40px;flex-wrap:wrap;margin-top:40px;align-items:center;">
-        <a href="/cdn-cgi/l/email-protection#b0cad8d9dad9d1dedcd9c5818283848586f0d7ddd1d9dc9ed3dfdd" style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.06em;color:#1B1916;text-decoration:none;border-bottom:1px solid #1B1916;padding-bottom:5px;"><span class="__cf_email__" data-cfemail="e19b89888b88808f8d8894d0d3d2d5d4d7a1868c80888dcf828e8c">[email&#160;protected]</span></a>
-        <a href="https://www.instagram.com/pix.zl_peep" target="_blank" style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.06em;color:#1B1916;text-decoration:none;border-bottom:1px solid #1B1916;padding-bottom:5px;">@pix.zl_peep ↗</a>
-      </div>
-      <div style="display:flex;justify-content:space-between;margin-top:80px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:#8B8479;flex-wrap:wrap;gap:8px;">
-        <span>© 2026 Bosco Liu</span>
-        <span>Thanks for looking<br><br></span>
-      </div>
-    </div>
-  </footer>
-
   <div id="cursor" style="position:fixed;top:0;left:0;z-index:60;width:74px;height:74px;border-radius:50%;background:#1B1916;color:#E7E3DD;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.16em;text-transform:uppercase;pointer-events:none;opacity:0;transform:translate(-100px,-100px) scale(0);transition:opacity 0.25s ease;will-change:transform;">View</div>
 
   <div id="lightbox" style="display:none;position:fixed;inset:0;z-index:80;background:#FFFFFF;flex-direction:column;animation:lbin 0.4s ease both;">
@@ -246,7 +231,7 @@
     </div>
   </div>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 (function(){
   var PHOTOS=[["P1111483_lab_web",5528,3720,"A lone cypress tree silhouetted against a glowing orange sunset with figures on the horizon"],["P1003633_web",4943,7415,"Sunlight streaming through the concrete arches of a viaduct underpass"],["P1003626_web",7328,4886,"A golden hazy sunset over a bay with power lines crossing the sky"],["PB180206_web",5125,3802,"A lone car parked under a bright street lamp in a dark empty lot at night"],["P1142576_lab_1_web",4000,6000,"A brightly lit service station glowing at night above a wet, reflective forecourt"],["P1280011_web",4741,3556,"A misty forest trail winding through tall trees with soft light filtering through"],["DSC_3171_web",5923,3948,"A bright full moon glowing in a dark night sky over silhouetted houses and hills"],["P1131704_lab_web",5597,3731,"A silver commuter train crossing an elevated track under a clear blue sky"],["P1061158_web",4820,3615,"Birds flying over the ocean past a lone tree on a coastal cliff"],["P1082085_web",5141,3411,"Fog-covered hills with the distant San Francisco skyline at dusk"],["P1010888_web",4000,6000,"Colorful flags and streamers fluttering against a bright blue sky"],["DSC_3068_web",4033,6049,"Looking up at the Transamerica Pyramid against a clear blue sky in San Francisco"],["IMG_9962_websmaller",6021,4014,"Blue-hour hilltop view over a glittering city with the moon and Venus overhead"],["PANA0022_01_web",5866,3911,"A figure standing on a path in thick violet fog at twilight"],["P1142567_lab_web",3558,5338,"Night railroad tracks glowing under red signal lights in the fog"],["P1051032_web",3022,2267,"Night long exposure of freeway light trails streaking past distant city lights"],["P1133851_web",5675,3784,"A San Francisco street at blue hour with the Transamerica Pyramid and the lit Columbus Tower"],["P1133600_web",5990,3993,"Black and white silhouette of a windswept tree backlit by bright fog"],["IMG_9958_web",3989,5983,"Black and white modernist colonnade of columns receding beneath a coffered ceiling"],["P1003572_web",1551,2326,"A modern apartment building facade with stacked balconies and a street lamp"],["P1040549_web",5091,3818,"A wooden gate at the end of a cobblestone path through tall redwood trees"],["DSC_3404_web",3961,5942,"A tree-lined road at golden hour with hazy sunlight and street lamps"],["P1131755_lab_web",5784,3745,"Black and white dramatic clouds over tidal flats lined with distant power poles"],["IMG_9207_web",6019,4013,"Heavy storm clouds gathering over a mountain town with snow-capped peaks"],["P1131876_lab_web",4670,3113,"A massive concrete dam and a winding road set among desert canyon cliffs"],["DSC_7361_02_web",5949,3906,"The sun setting over rolling hills with a winding road below"],["P1081972_web",2276,1707,"Black and white figure walking down steps beside towering concrete columns"],["P1142491_lab_web",5993,3995,"A San Francisco hillside cityscape with a person resting on a ledge among palm trees"],["P1142497_lab_web",3550,5324,"Coit Tower rising above trees and houses against a clear blue sky"],["P1020427_01_web",4683,3512,"The Golden Gate Bridge at sunset seen from the shore through warm haze"],["P1153008_lab_web",5981,3987,"Three friends walking down a paved trail through green trees under power lines"],["P1010314_web",4859,3644,"Black and white lone figure standing on a rocky shore beneath a wispy cloud"],["IMG_9564_web",6020,4013,"A traditional Chinese pavilion on a misty green hillside above a rock-garden pond"],["P1003654_web",7287,4858,"A mid-century modern house on a quiet street with parked cars"],["P1102989_web",3101,2326,"Lobby interior with a large black and white patterned tapestry above a row of stools"]];
   var gallery=document.getElementById('gallery');
